@@ -1,0 +1,49 @@
+// Dog Quoting Machine
+
+var arr1 = [ // create a const/var array with multiple dogs and dog-properties
+	{
+		"id": "1",
+		"dogName": "Lassie",
+		"dogQuote": "That Timmy couldn't do Anything without me!",
+		"dogType": "Collie",
+		"Movie": "Lassie",
+	},
+	{
+		"id": "2",
+		"dogName": "Rin-Tin-Tin",
+		"dogQuote": "Life at the Fort was Not Always Easy",
+		"dogType": "German Shepherd",
+		"Movie": "The Adventures of Rin-Tin-Tin",
+	},
+	{
+		"id": "3",
+		"dogName": "King",
+		"dogQuote": "I would rather be living in Southern California than the Yukon.",
+		"dogType": "German Shepherd - Wolf",
+		"Movie": "Sargeant Preston of the Yukon",
+	},
+	{
+		"id": "4",
+		"dogName": "dogName4",
+		"dogQuote": "dogQuote4",
+		"dogType": "dogType4",
+		"Movie": "Movie4",
+	},
+
+
+
+];
+
+
+function quoteRandomizer(min,max){ //use a quote Randomizer to select a dog in the array.
+
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function returnDogQuote (){
+	return arr1[randNum].dogQuote; // return lucky dog-Winner's quote!
+
+}
+
+var randNum = quoteRandomizer (0,4); // draw your lucky dog-Winner!
+returnDogQuote();
